@@ -8,7 +8,7 @@ app.listen(port);
 app.use('/', express.static('public'))
 app.route('/*')
     .get(function(req, res) {
-          res.sendFile(path.join(__dirname + '/dist/pwa-mat/index.html'));
+          res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
 module.exports = app;
