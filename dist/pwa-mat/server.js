@@ -5,6 +5,7 @@ app = express();
 app.use(serveStatic(__dirname));
 var port = process.env.PORT || 5000;
 app.listen(port);
+app.use('/service-worker.js', serve('./public/service-worker.js'))
 app.use('/', express.static('public'))
 app.route('/*')
     .get(function(req, res) {
