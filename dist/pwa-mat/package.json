@@ -1,0 +1,10 @@
+{
+ "name": "FarmHands",
+ "version": "1.0.0",
+ "description": "Farming 4.0",
+ "author": "Helmut Steiner",
+ "private": true,
+ "scripts": {
+   "postinstall": "yarn add express"
+ }
+}
