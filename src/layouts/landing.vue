@@ -7,15 +7,14 @@
         :inverted="$q.theme === 'ios'"
       >
         <q-toolbar-title>
-          Welcome to FarmHands
+          FarmHands
         </q-toolbar-title>
       </q-toolbar>
     </q-layout-header>
     <q-page-container>
       <router-view />
-      <img :src="imageSrc">
     </q-page-container>
-    </q-layout>
+  </q-layout>
 </template>
 
 <script>
@@ -25,8 +24,7 @@ export default {
   name: 'LayoutDefault',
   data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop,
-      imageSrc: 'statics/icons/icon-128x128.png'
+      leftDrawerOpen: this.$q.platform.is.desktop
     }
   },
   methods: {
